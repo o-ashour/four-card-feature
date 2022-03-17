@@ -146,7 +146,7 @@ header p {
   font-size: 0.8rem;
   color: var(--neutral-2);
   font-weight: 400;
-  margin-bottom: 21%;
+  /* margin-bottom: 21%; */
   text-align: center;
 }
 
@@ -165,6 +165,10 @@ header p {
 }
 
 @media (min-width: 811px) {
+  header {
+    margin: 4% 0;
+  }
+  
   .container {
     flex-flow: row;
   }
@@ -181,8 +185,23 @@ header p {
   .supervisor {
     align-self: center;
   }
-  
+
   .calculator {
     align-self: center;
+  }
+
+  @media (min-width: 1000px) {
+    header h1 {
+      font-size: 1.4rem;
+    }
+
+    header h1, header h2 {
+      font-size: 2.6rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      padding: 0 11em;
+    }
   }
 }
