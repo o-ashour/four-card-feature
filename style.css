@@ -46,8 +46,6 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 0.94rem;
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   margin: 0;
 }
@@ -76,6 +74,11 @@ p {
 /* main styles */
 
 .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
   position: relative;
   max-width: 100%;
   height: 17em;
@@ -85,6 +88,10 @@ p {
   margin-bottom: 7%;
   border-radius: 6px;
   box-shadow: 0px 8px 14px 0px hsl(228.8, 39%, 83.9%);
+}
+
+.center-cards {
+  max-width: 100%;
 }
 
 header {
@@ -155,4 +162,27 @@ header p {
   color: var(--neutral-2);
   font-weight: 200;
   line-height: 1.8;
+}
+
+@media (min-width: 811px) {
+  .container {
+    flex-flow: row;
+  }
+
+  .container > * {
+    flex: 1 1 0;
+  }
+
+  .card {
+    margin: 0 2%;
+    padding: 0;
+  }
+
+  .supervisor {
+    align-self: center;
+  }
+  
+  .calculator {
+    align-self: center;
+  }
 }
