@@ -76,12 +76,16 @@ p {
 /* main styles */
 
 .container {
+  position: relative;
   max-width: 100%;
-  height: 15em;
+  height: 17em;
+  padding: 6% 8%;
   background-color: var(--neutral-3);
-  margin: 2%;
+  margin: 0 6%;
+  margin-bottom: 7%;
   border-radius: 6px;
-  box-shadow: 0px 8px 14px 0px hsl(228.8, 39%, 83.9%);}
+  box-shadow: 0px 8px 14px 0px hsl(228.8, 39%, 83.9%);
+}
 
 header {
   display: flex;
@@ -107,6 +111,15 @@ header {
   border-top: 3px solid var(--primary-4);
 }
 
+.icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1rem;
+  margin-bottom: 9%;
+  margin-right: 9%;
+}
+
 /* typography */
 header h1 {
   font-size: 1.3rem;
@@ -128,4 +141,18 @@ header p {
   font-weight: 400;
   margin-bottom: 21%;
   text-align: center;
+}
+
+.container h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--neutral-1);
+  margin-bottom: 3%;
+}
+
+.container p {
+  font-size: 0.9rem;
+  color: var(--neutral-2);
+  font-weight: 200;
+  line-height: 1.8;
 }
